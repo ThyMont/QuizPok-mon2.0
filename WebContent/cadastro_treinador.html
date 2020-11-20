@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>PokéQUIZ - Início</title>
+        <link rel="stylesheet" type="text/css"
+            href="lib/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="lib/css/estilo.css">
+        <script src="./lib/jquery/jquery.min.js"></script>
+        <script src="./lib/js/script.js"></script>
+    </head>
+    <body>
+        <div id="background">
+        <header>
+            <div id="menu" class="container">
+                <ul>
+                    <li><a href="index.jsp" class="primeiro">Home</a></li>
+                    <li><a href="National-dex">Pokédex</a></li>
+                    <li><a href="Quiz">Quiz</a></li>
+                    <li><a href="Treinador">Treinador</a></li>
+                </ul>
+            </div>
+        </header>
+        <div id="separador-menu"></div>
+        <div id="conteudo">
+            <div class="container">
+                <div class="box-conteudo box-center">
+                    <h1>Novo Treinador</h1>
+                    <h6>Seja bem-vindo(a) à sua nova jornada!</h6>
+                </div>
+                <div class="box-conteudo">
+                    <div id="formulario">
+                        <form action="CadastrarTreinador" method="post">
+                            <label for="nome">Nome de treinador:</label>
+                            <input type="text"
+                                id="nome" name="nome" maxlength="20" required
+                                placeholder="Insira seu nome de usuário aqui"> <br>
+                            <label for="data_nascimento">Data de Nascimento: </label> <input
+                                type="date" required id="data_nascimento" name="data_nascimento">
+                            <br> <label for="avatar">Avatar</label> 
+                            <select name="avatar" id="avatar" onchange="atualizarAvatar(this.value)">
+                                <option value="RED">Red</option>
+                                <option value="LEAF">Leaf</option>
+                                <option value="ETHAN">Ethan</option>
+                                <option value="KRIS">Kris</option>
+                                <option value="LUCAS">Lucas</option>
+                                <option value="MAY">May</option>
+                                <option value="LUCAS">Lucas</option>
+                                <option value="DAWN">Dawn</option>
+                            </select>
+                            <br> <label for="genero">Gênero: </label><br> <input
+                                type="radio" id="male" name="genero" value="male" checked>
+                            <label for="male">Homem</label><br> <input type="radio"
+                                id="female" name="genero" value="female"> <label
+                                for="female">Mulher</label><br> <input type="radio"
+                                id="other" name="genero" value="other"> <label
+                                for="other">Outro</label><br> <label for="mascote">Pokémon
+                            Inicial</label> 
+                            <select name="mascote" id="mascote" onchange="atualizarPokemon(this.value)">
+                                <option value="Bulbasaur">Bulbasaur</option>
+                                <option value="Charmander">Charmander</option>
+                                <option value="Squirtle">Squirtle</option>
+                                <option value="Pikachu">Pikachu</option>
+                            </select>
+                            <br> <label for="senha">Senha</label> <input type="password"
+                                id="senha" name="senha" required><br> <input
+                                type="submit">
+                        </form>
+                    </div>
+                    <div class="box-imagens">
+						<div class="avatar-box">
+						 <img id="img-avatar" src="./lib/img/treinador/RED.png" alt="Avatar" height="300px">
+					 </div>
+					  <div class="pokemon-box">
+						 <img id="img-mascote" src="./lib/img/pokemon/mascote/Bulbasaur.png" alt="Avatar" height="150px">
+					 </div>
+				 </div>
+				 <div class="clear"></div>
+                    <!--Fim do conteúdo da página-->
+                </div>
+            </div>
+            <footer>
+                <p>
+                    Desenvolvido por <a href="http://github.com/thymont">ThyMont</a> -
+                    2020
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

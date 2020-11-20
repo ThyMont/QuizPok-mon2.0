@@ -1,0 +1,316 @@
+/*Estilos Barra de Menu*/
+header{
+	height: auto;
+	background: #FF544A url(../img/fundo-horizontal.png) repeat-x;
+	color: #fff;
+}
+#img-menu {
+	float: left;
+	padding-left: 1em;
+}
+#separador-menu{
+	background: url(../img/fundoMenu.png) repeat-x;
+	background-color: transparent;
+	mix-blend-mode: multiply;
+	height: 25px;
+}
+#menu{
+	height: auto;
+	text-align: center;
+}
+#menu ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: auto;
+	display: inline-flex;
+	
+}
+#menu a{
+	background: url(../img/divisor.png) repeat-y;
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	padding: 0 2em;
+	line-height: 3.5em;
+	font-size: larger;
+	font-weight: bold;
+	
+}
+#menu a:hover{
+	background: #fff;
+	color: #FF544A;
+}
+#menu .primeiro {
+	background: none;
+}
+
+
+/*Estilos Conteúdo*/
+#conteudo{
+	min-height: 200px;
+	height: auto;
+	
+}
+.box-conteudo{
+	border: red 1px;
+	background-color: #fff;
+	padding: 0.5em;
+	margin: 10px;
+	border-radius: 20px;	
+}
+.box-center{
+	text-align: center;
+}
+
+/*Estilos Rodapé*/
+footer{
+	height: auto;
+	background: #3d3d3d;
+	text-align: center;
+	color: #fff;
+	line-height: 4em;
+}
+
+/*Estilos Gerais*/
+#background{
+	background: url(../img/Pokebolabg.png);
+	background-size: 20%;
+}
+.clear{
+	clear: both;
+}
+
+/*Pokédex*/
+#lista-pokedex{
+	width: 30%;
+	font-size: 1.5em;
+	margin: 5px;
+}
+#lista-pokedex select{
+	width: 100%;
+}
+.img-pokedex {
+	height: 250px;
+	margin: 5px;
+}
+.tipo{
+	width: 8%;
+	min-width: 40px;
+	display: flex;
+}
+.tipo-img{
+	width: 100%;
+}
+.box-pokemon{
+	padding: 15px;
+	width: unset;
+	float: left;
+	max-width: 70%;
+	font-size: 1.5em;
+}
+.box-pokedex{
+	display: contents;
+}
+.item-pokedex{
+	margin: 10px;
+	padding: 5px;
+	width: 31%;
+	float: left;
+	font-size: 1em;
+	font-weight: bold;
+	border-radius: 12px;
+	text-align: center;
+}
+.item-pokedex img{
+	width: 80%;
+}
+.item-pokedex a{
+	text-decoration: none;
+	color: white;
+}
+.nao-visto, .oculto{
+	filter: brightness(0%);
+}
+a{
+	cursor: pointer;
+}
+
+/*Cores por tipo*/
+.tipo1-normal{
+    background: #A8A878;
+    border: 3px solid #C6C6A7;
+}
+.tipo1-fire{
+    background: #F08030;
+    border: 3px solid #9C531F;
+}
+.tipo1-water{
+    background: #6890F0;
+    border: 3px solid #445E9C;
+}
+.tipo1-grass{
+    background: #78C850;
+    border: 3px solid #4E8234;
+}
+.tipo1-electric{
+    background: #F8D030;
+    border: 3px solid #A1871F;
+}
+.tipo1-ice{
+    background: #98D8D8;
+    border: 3px solid #638D8D;
+}
+.tipo1-ground{
+    background: #E0C068;
+    border: 3px solid #927D44;
+}
+.tipo1-steel{
+    background: #B8B8D0;
+    border: 3px solid #787887;
+}
+.tipo1-fairy{
+    background: #EE99AC;
+    border: 3px solid #9B6470;
+}
+.tipo1-dragon{
+    background: #7038F8;
+    border: 3px solid #4924A1;
+}
+.tipo1-ghost{
+    background: #705898;
+    border: 3px solid #493963;
+}
+.tipo1-poison{
+    background: #A040A0;
+    border: 3px solid #682A68;
+}
+.tipo1-flying{
+    background: #A890F0;
+    border: 3px solid #6D5E9C;
+}
+.tipo1-fighting{
+    background: #C03028;
+    border: 3px solid #7D1F1A;
+}
+.tipo1-dark{
+    background: #705848;
+    border: 3px solid #49392F;
+}
+.tipo1-psychic{
+    background: #F85888;
+    border: 3px solid #A13959;
+}
+.tipo1-bug{
+    background: #A8B820;
+    border: 3px solid #6D7815;
+}
+.tipo1-rock{
+    background: #B8A038;
+    border: 3px solid #786824;
+}
+.tipo2-normal{
+    border: 3px solid #C6C6A7;
+}
+.tipo2-fire{
+    border: 3px solid #9C531F;
+}
+.tipo2-water{
+    border: 3px solid #445E9C;
+}
+.tipo2-grass{
+    border: 3px solid #4E8234;
+}
+.tipo2-electric{
+    border: 3px solid #A1871F;
+}
+.tipo2-ice{
+    border: 3px solid #638D8D;
+}
+.tipo2-ground{
+    border: 3px solid #927D44;
+}
+.tipo2-steel{
+    border: 3px solid #787887;
+}
+.tipo2-fairy{
+    border: 3px solid #9B6470;
+}
+.tipo2-dragon{
+    border: 3px solid #4924A1;
+}
+.tipo2-ghost{
+    border: 3px solid #493963;
+}
+.tipo2-poison{
+    border: 3px solid #682A68;
+}
+.tipo2-flying{
+    border: 3px solid #6D5E9C;
+}
+.tipo2-fighting{
+    border: 3px solid #7D1F1A;
+}
+.tipo2-dark{
+    border: 3px solid #49392F;
+}
+.tipo2-psychic{
+    border: 3px solid #A13959;
+}
+.tipo2-bug{
+    border: 3px solid #6D7815;
+}
+.tipo2-rock{
+    border: 3px solid #786824;
+}
+
+/*Quiz*/
+
+.img-quiz{
+	width: 100%;
+	/*padding: 10px;*/
+}
+.btn{
+	margin: 15px;
+}
+.opcao{
+	font-size: larger;
+	font-weight: bold;
+}
+.caixa-img{
+	width:25%;
+	margin: 0 auto;
+	border-radius: 50px;
+	padding: 40px;
+}
+.apareceu{
+	filter: brightness(100%);
+}
+
+/*Treinador*/
+.avatar-box{
+	width: fit-content;
+	/*margin: 50px 60px;*/
+	
+}
+.pokemon-box{
+	/*float: right;*/
+	margin-top: 150px;
+	width: fit-content;
+}
+.box-imagens{
+	margin: 20px 50px;
+	width: fit-content;
+	float: right;
+	display: flex;
+	text-align: center;
+	padding: 20px;
+}
+.box-conteudo2{
+	display: inline;
+}
+#formulario{
+	float: left;
+	padding: 30px;
+	width: 50%;
+}
